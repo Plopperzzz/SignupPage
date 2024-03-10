@@ -1,0 +1,56 @@
+:root {
+    --primary-color: rgb(55, 1, 126);
+    --secodary-color: rgb(211, 211, 211);
+    --tertiary-color: rgb(105, 105, 105);
+}
+
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.site-image{
+    background-image: url(../Assets/Images/Space.jpg);
+    background-repeat: no-repeat;
+    background-position: 60% 50%;
+    background-size: cover;
+    height: 100vh;
+    width: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.author-link{
+    font-family: "roboto condensed";
+    color: var(--secodary-color);
+    text-align: center;
+    margin: 1em;
+}
+.links {
+    font-family: inherit;
+    color: var(--tertiary-color);
+}
+
+.site-logo-container{
+    position: relative;
+    top: 25%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.site-logo {
+    display: flex;
+    justify-content: center;
+    font-family: speedyregular;
+    font-size: 72px;
+    color: var(--secodary-color);
+}
+
+.sign-up-container {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    flex:auto;
+}
