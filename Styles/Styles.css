@@ -2,6 +2,9 @@
     --primary-color: rgb(55, 1, 126);
     --secodary-color: rgb(211, 211, 211);
     --tertiary-color: rgb(105, 105, 105);
+    --button-color: rgb(100,0,200);
+    --padding: 2rem;
+    --font-size: 30px;
 }
 
 body{
@@ -43,14 +46,28 @@ body{
 .site-logo {
     display: flex;
     justify-content: center;
+    text-align: center;
     font-family: speedyregular;
-    font-size: 72px;
+    font-size: 50px;
     color: var(--secodary-color);
 }
 
 .sign-up-container {
-    background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
     flex:auto;
+}
+
+.sign-up-container{
+    font-family: "roboto condensed";
+    font-size: var(--font-size);
+    font-weight: bold;
+    padding: var(--padding);
+    display: flex;
+    flex:1;
+}
+
+.tag{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
 }
