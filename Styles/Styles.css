@@ -10,14 +10,14 @@
 
 body{
     display: flex;
-    justify-content: center;
     margin: 0;
     padding: 0;
 }
 
 .container {
     display: flex;
-    justify-content: center;
+    /*min-width: min(50%, 800px);*/
+    flex: 1;
     margin: 0;
     padding: 0;
 }
@@ -68,7 +68,6 @@ body{
 .sign-up-container {
     display: flex;
     flex-direction: column;
-    flex-grow: 2;
 }
 
 .sign-up-container{
@@ -146,7 +145,7 @@ input:focus{
     display: flex;
     gap: var(--margin);
     padding: var(--padding);
-    box-shadow: 0rem 0.3rem 0.3rem rgb(138, 138, 138);
+    /*box-shadow: 0rem 0.3rem 0.3rem rgb(138, 138, 138);*/
 }
 
 .btn {
@@ -180,4 +179,9 @@ input:focus{
 .pass-error {
     height: 1em;
     color: red;
+}
+
+.filler {
+    flex: 1;
+    background-image: linear-gradient(to right, var(--secodary-color), white);
 }
