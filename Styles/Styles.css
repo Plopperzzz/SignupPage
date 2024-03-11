@@ -6,9 +6,9 @@
     --padding: 2rem;
     --margin: 0.5rem;
     --font-size: 30px;
-    --border-width: 1px;
+    --border-width: 2px;
     --border-rads: 0.5em;
-    --transition-time: 0.15s;
+    --transition-time: 0.1s;
 }
 
 body{
@@ -30,8 +30,11 @@ body{
     background-repeat: no-repeat;
     background-position: 60% 50%;
     background-size: cover;
+    box-shadow: 20px 20px 50px black;
     height: 100vh;
     width: 50vh;
+    overflow: visible;
+
 
     display: flex;
     flex-direction: column;
@@ -54,8 +57,12 @@ body{
 }
 
 .site-logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     top: 25%;
+    height: 10%;
     background-color: rgba(0,0,0,0.4);
 }
 
@@ -130,7 +137,6 @@ input{
 
 .error{
     font-family:inherit;
-    border-radius: 3px;
     height: 1.5rem;
     border: var(--border-width) red solid;
     margin-top: var(--margin);
@@ -169,7 +175,7 @@ input:focus{
 .btn:hover{
     background-color: var(--primary-color);
     box-shadow: 1px 1px 2px rgb(116, 81, 114);
-    scale: 1.1;
+    scale: 1.03;
 }
 
 .footer{
