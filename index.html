@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/Styles.css">
     <link rel="stylesheet" href="Styles/fonts.css">
+    <script src="script.js" defer></script>
     <title></title>
 </head>
 
@@ -45,7 +46,7 @@
                         </div>
                         <div class="input-container">
                             <label for="user_password">Password</label>
-                            <input type="password" id="user_password" name="user_password" required>
+                            <input onkeyup="checkpass()" type="password" id="user_password" name="user_password" autocomplete="on" required>
                         </div>
                     </div>
                     <div class="cols">
@@ -59,7 +60,8 @@
                         </div>
                         <div class="input-container">
                             <label for="user_conpassword">Confirm Password</label>
-                            <input type="password" id="user_conpassword" name="user_conpassword" required>
+                            <input onkeyup="checkpass()" type="password" id="user_conpassword" name="user_conpassword" autocomplete="on" required>
+                            <div class="pass-error" name="confirm-error"></div>
                         </div>
                     </div>
                 </div>

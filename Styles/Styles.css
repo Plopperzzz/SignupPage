@@ -126,6 +126,15 @@ input{
     padding: 0.25rem;
 }
 
+.error{
+    font-family:inherit;
+    border-radius: 3px;
+    height: 1.5rem;
+    border: 3px red solid;
+    margin-top: var(--margin);
+    box-shadow: 1px 1px 2px red;
+    padding: 0.25rem;
+}
 input:focus{
     outline: none;
     border-width: 3px;
@@ -166,4 +175,9 @@ input:focus{
 .theme-link{
     text-decoration: none;
     color: var(--primary-color);
+}
+
+.pass-error {
+    height: 1em;
+    color: red;
 }
