@@ -6,6 +6,9 @@
     --padding: 2rem;
     --margin: 0.5rem;
     --font-size: 30px;
+    --border-width: 1px;
+    --border-rads: 0.5em;
+    --transition-time: 0.15s;
 }
 
 body{
@@ -84,7 +87,7 @@ body{
 .tag
 {
     padding: var(--padding);
-    color: var(--primary-color);
+    color: var(--tertiary-color);
 }
 
 .caption {
@@ -118,9 +121,9 @@ body{
 
 input{
     font-family:inherit;
-    border-radius: 3px;
+    border-radius: var(--border-rads);
     height: 1.5rem;
-    border: 3px var(--tertiary-color) solid;
+    border: var(--border-width) var(--tertiary-color) solid;
     margin-top: var(--margin);
     padding: 0.25rem;
 }
@@ -129,14 +132,14 @@ input{
     font-family:inherit;
     border-radius: 3px;
     height: 1.5rem;
-    border: 3px red solid;
+    border: var(--border-width) red solid;
     margin-top: var(--margin);
     box-shadow: 1px 1px 2px red;
     padding: 0.25rem;
 }
 input:focus{
     outline: none;
-    border-width: 3px;
+    border-width: var(--border-width);
     border-color: var(--button-color);
     box-shadow: 1px 1px 2px rgb(116, 81, 114);
 }
@@ -156,13 +159,17 @@ input:focus{
     width: 175px;
     cursor: pointer;
 
-    border-radius: 0.5em;
+    border-radius: var(--border-rads);
     padding: var(--margin);
     margin: var(--padding);
+
+    transition: scale var(--transition-time);
 }
 
 .btn:hover{
     background-color: var(--primary-color);
+    box-shadow: 1px 1px 2px rgb(116, 81, 114);
+    scale: 1.1;
 }
 
 .footer{
